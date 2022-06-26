@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        var altura
+        var peso
+        var resultado
+        
+        altura = prompt("Digite sua altura:")
+        altura = eval(altura)
+        peso = prompt("Digite seu peso:")
+        peso = eval(peso)
+        console.log("Sua altura é: " + altura)
+        console.log("Seu peso é: " + peso)
+
+        resultado = peso/(altura*altura)
+        console.log("Seu IMC é: " + resultado)
+    </script>
+
+    <!-- 
+        // Declarando Variaveis
+        var altura;
+        var peso;
+        var imc;
+        // Recebendo dados do Usuario
+        altura = prompt("Digite a sua altura: ")
+        peso = prompt("Digite o seu peso: ")
+        //Exibir dados
+        console.log(`Altura: ${altura}, Peso: ${peso}`)
+        //Tratar Dados
+        var alt = Number(altura)
+        var ps = Number(peso)
+        // Calculo do IMC
+        imc = peso / (altura * 2)
+        //Exibindo IMC
+        console.log("Seu IMC é: " + imc.toFixed(2) + "%")
+    -->
+</body>
+</html>

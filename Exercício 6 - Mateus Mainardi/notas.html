@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <script>
+        var n1
+        var n2
+        var n3
+        var n4
+        var media
+        
+        n1 = prompt("Digite sua primeira nota:")
+        n1= eval (n1) 
+        n2 = prompt("Digite sua segunda nota:")
+        n2= eval (n2) 
+        n3 = prompt("Digite sua terceira nota:")
+        n3= eval (n3) 
+        n4 = prompt("Digite sua quarta nota:")
+        n4= eval (n4) 
+        console.log("Suas notas são: " + n1 + ", " + n2 + ", " + n3 + " e " + n4)
+
+        media = (n1 + n2 + n3 + n4)/4
+        console.log("Média = " + media)
+
+        console.log("Incremente = " + n1++)
+        console.log(n1)
+        
+        console.log("Decremente = " + n2--)
+        console.log(n2)
+
+    </script>
+
+    <!--
+          // Declarando Variaveis
+        var nota1;
+        var nota2;
+        var nota3;
+        var nota4;
+        var media;
+        // Recebebdno dados do Usuario
+        nota1 = prompt("Digite a 1º nota: ")
+        nota2 = prompt("Digite a 2º nota: ")
+        nota3 = prompt("Digite a 3º nota: ")
+        nota4 = prompt("Digite a 4º nota: ")
+        //Exibir dados
+        console.log(`Nota 1º: ${nota1}, Nota 2º: ${nota2}, Nota 3º: ${nota3}, Nota 4º: ${nota4}`)
+        //Tratar Dados
+        var n1 = Number(nota1)
+        var n2 = Number(nota2)
+        var n3 = Number(nota3)
+        var n4 = Number(nota4)
+        // Calculo da media
+        media = (n1 + n2 + n3 + n4) / 4
+        //Exibindo a media
+        console.log("A média da notas é: " + media)
+    -->
+</body>
+</html>

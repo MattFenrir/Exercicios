@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(32, 33, 36);
+    min-height: 100%;
+    max-height: 100%;
+}
+
+a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* NAV */
+
+header {
+    height: max-content;
+    color: whitesmoke;;
+}
+
+.navbar .navbar-right .navbar-right2 {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    gap: 15px;
+    padding: 15px;;
+    font-size: 11pt;
+    margin-right: 20px;
+}
+
+.navbar .navbar-right .navbar-right2 .display {
+    display: block;
+}
+
+.navbar .navbar-right .navbar-right2 .display span {
+    display: relative;    
+    border-radius: 50%;
+    width: fit-content;      
+    margin: auto;
+    cursor: pointer;
+}
+
+.navbar .navbar-right .navbar-right2 .display .hover {
+    position: absolute;
+    right: 2%;
+    display: none;    
+    border: 1px solid black;
+    width: auto;
+    height: 300px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;     
+    padding-top: 10px;    
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+.navbar .navbar-right .navbar-right2 .display .hover ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: static;
+    justify-content: center;  
+}
+
+.navbar .navbar-right .navbar-right2 li:hover div {
+    display: block; 
+}
+
+.navbar .navbar-right .navbar-right2 .display:hover div {
+    display: block;
+}
+
+.navbar .navbar-right .navbar-right2 .display .hover ul li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#gerenciar {
+background-color: transparent;
+    width: 250px;
+    height: 40px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+#gerenciar:hover {
+background-color: #3c4043;    
+}
+
+#sign-out {
+    background-color: transparent;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+#sign-out:hover {
+    background-color: #3c4043;
+}
+
+.navbar .navbar-right .avatar img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;    
+   cursor: pointer;  
+   position: relative;
+   bottom: 5px;
+}
+
+.navbar .navbar-right .avatar .image-1 {    
+    position: absolute;
+    display: none;
+    right: 2%;
+    top: 20px;
+    border: 1px solid black;
+    width: auto;
+    height: 520px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;     
+    padding-top: 10px;    
+    margin-top: 35px;     
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 ul {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 380px;
+    height: 300px;
+    gap: 15px;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 ul .privacy ul {
+    display: flex;    
+    flex-direction: row;
+    gap: 15px;
+    font-size: 08pt;
+    width: fit-content;
+    height: fit-content;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 ul .privacy ul .pts {
+    cursor: pointer;    
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 ul .privacy ul .pts:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 .image-2 {
+    font-size: 11pt;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 .image-2 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 .image-2 li{   
+   text-align: center;
+   align-items: center;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 .image-2 li span {
+    padding-right: 15px;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 .image-2 .person-add {
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar .navbar-right .navbar-right2 .avatar .image-1 .image-2 .image-line {
+   width: 100%;
+   color: aliceblue;
+}
+
+/* MAIN */
+
+.meio{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 185px;
+    padding: 0px 35%;
+}
+.meio .meio-input{
+    display: flex;
+    width: 100%;
+    height: 37px;
+    border-radius: 100px;
+    border: 1px solid dimgrey;
+    padding: 5px;
+    padding-top: 5px;   
+    justify-content: center;
+}
+.meio .meio-input #search{
+    display: flex;
+    flex: 100%;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;    
+    color: white;    
+    border: 0;
+    font-size: 12pt;
+    appearance: none;    
+}
+
+.meio .meio-input:hover{
+    background-color: rgb(77, 73, 73);
+    box-shadow: 2px 2px 8px rgb(0, 0, 0, 30%);
+}
+.meio .meio-input span{   
+    color: dimgrey;  
+    padding: 8px 8px 0px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meio .meio-button{
+    display: flex;
+    gap: 20px;
+    padding-top: 5px;          
+    width: 1000px;
+    height: 30px;
+    justify-content: center;        
+}
+.meio .meio-button input{
+    background-color: rgb(48, 45, 45);  
+    color: white;   
+    border: none;
+    display: flex;
+    width: 130px;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 36px;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 5px 1px;
+}
+.meio .meio-button input:hover{
+    border: 1px solid rgb(97, 97, 97);
+}
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+
+.meio .meio-final{
+    padding-top: 20px;
+    font-size: 10pt;
+    color: white;
+}
+.meio .meio-final a{
+    color: #8ab4f8;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-begin{
+    padding: 15px 30px;
+    background-color: rgb(19, 18, 18);
+    color: rgb(148, 147, 147);    
+}
+footer .footer-end{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 15px 37px;
+    background-color: rgb(19, 18, 18);
+    color: rgb(148, 147, 147);    
+}
+footer .footer-end a{    
+    color: rgb(148, 147, 147);
+    font-size: 14px;
+}
+footer .footer-end .footer-1{
+    display: flex;
+    gap: 30px;
+    color: rgb(148, 147, 147);    
+}
+footer .footer-end .footer-2{
+    display: flex;   
+    gap: 30px;
+    color: rgb(148, 147, 147);  
+}

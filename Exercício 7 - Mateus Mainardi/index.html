@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.236);
+        }
+        header{
+            height: 50px;
+            text-align: center;
+            font-size: 25pt;
+            color: white;
+            background-color: black;
+        }
+        main{
+            width: 80%;
+            margin: auto;
+            background-color: #ccc;
+            padding: 10px;
+        }
+        main img{
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+        }
+        main p{
+            font-size: 20pt;
+            text-align: justify;
+        }
+        footer{
+            height: 30px;
+            background-color: black;
+            text-align: center;
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span id="title">Exercício</span>
+    </header>
+    <main>
+        <article>
+            <img src="assets/logoFundoAzulVGA.jpg" alt="">
+        </article>
+        <article>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo, error mollitia iure modi veniam quos fuga dignissimos. Repellendus error aliquid, commodi illo qui consectetur harum. Eum doloribus quam laborum.</p>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo, error mollitia iure modi veniam quos fuga dignissimos. Repellendus error aliquid, commodi illo qui consectetur harum. Eum doloribus quam laborum.</p>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo, error mollitia iure modi veniam quos fuga dignissimos. Repellendus error aliquid, commodi illo qui consectetur harum. Eum doloribus quam laborum.</p>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illo, error mollitia iure modi veniam quos fuga dignissimos. Repellendus error aliquid, commodi illo qui consectetur harum. Eum doloribus quam laborum.</p>
+            
+        </article>
+    </main>
+    <footer>
+        <a href="#" id="foot">JS Exercicio</a>
+    </footer>
+    
+    <script>
+
+        var titulo = document.getElementById('title')
+        console.log("O título é: " + titulo.innerText)
+
+        var imagem = document.getElementsByTagName('img')
+        console.log("A quantidade de imagens é: " + imagem.length)
+
+        var paragrafo = document.getElementsByClassName('lorem')
+        console.log("A quantidade de paragrafos é: " + paragrafo.length
+        )
+
+        var rodape = document.getElementById('foot')
+        console.log("O rodapé é: " + rodape.innerText)
+    </script>
+
+    <!-- 
+        //Capturando Título (header)
+        var titulo = document.querySelector('header span');
+        console.log("Título: " + titulo.innerHTML)
+
+        //Capturando Img (Main)
+        var img = document.getElementsByTagName('img');
+        console.log("IMG: " + img[0].src)
+
+        //Capturando Paragrafos (Main)
+        var parag = document.querySelectorAll('main p');
+        console.log("Parágrafos: " + parag.length)
+
+        //Capturando Rodapé (footer)
+        var link = document.getElementsByClassName('link')
+        console.log("Links: " + link.length)
+    -->
+</body>
+</html>

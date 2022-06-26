@@ -1,0 +1,393 @@
+/* Comandos globais */
+
+* {
+    margin: 0;
+    padding: 0;
+  
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.global-padding {
+    padding: 1rem 23rem;
+}
+
+/* Nav e Promoção */
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.button-global {
+    border-radius: 100px;
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.comecar-button {
+    background-color: rgb(22, 22, 22);
+    border: 2px solid black;
+}
+
+.comecar-button:hover {
+    background-color: black;
+}
+
+.promocao footer p {
+    font-size: 10px;
+}
+
+.promocao footer p a {
+    color: white;
+}
+
+.top-header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header a{ 
+    color: white;
+}
+
+.top-header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-header nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-header nav a:hover {
+    color: #1db954;
+    font-weight: bold;
+}
+
+.vertical-divider {
+    background-color: white;
+    width: 1px;
+    height: 16px;
+}
+
+.promocao {
+    background-color: rgb(29, 117, 222);
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.promocao h3 {
+    font-weight: 400;
+}
+
+.promocao .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.promocao .actions div:nth-child(1) {
+    width: 150px;
+}
+
+.promocao .actions div:nth-child(2) {
+    width: 180px;
+}
+
+.promocao .actions .veja-planos-button {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.promocao .actions .veja-planos-button:hover {
+    background-color: rgb(67, 84, 235);
+}
+
+/* Por que ser Premium? */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 40x 5px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.grid .grid-title{
+    text-align: center;
+    grid-column: 1/5;
+    font-size: 35px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.grid .grid-img{
+    padding: 10px;
+}
+
+.grid .grid-text{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+/* Escolha seu plano Premium */
+
+.cards-list{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cards-list .card-img img{
+    width: 30px;
+    height: 15px;
+}
+
+.cards-list li a{
+    text-decoration: underline;
+}
+
+.plan-main {
+    background-color: rgb(233, 232, 231);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+.plan-main .header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+  
+.plan-main .header .card-list {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+ }
+  
+.plan-main .header .card-list img {
+    width: 30px;
+}
+  
+.plan-main .header .card-list li:last-child {
+    text-decoration: underline;
+}
+
+.plan-main .plan-list{
+    display: flex;
+    gap: 20px;
+}
+  
+.plan-main .plan-list{
+    margin-top: 3rem;
+}
+  
+.plan-main .plan-list .plan-item{
+    background-color: white;
+    box-shadow: 0 0 10px 0 #b1b1b1;
+    border-radius: 10px;
+    padding: 1rem;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+  
+.plan-main .plan-list .plan-item header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.plan-main .plan-list .plan-item header p:first-child,
+.plan-main .plan-list .plan-item header p:nth-child(2){
+    padding: 0.3rem;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    width: fit-content;
+}
+  
+.plan-main .plan-list .plan-item header p:first-child{
+    background-color: rgb(46, 119, 208);
+    color: white;
+}
+  
+.plan-main .plan-list .plan-item header p:nth-child(2){
+    border: 1px solid rgb(46, 119, 208);
+    color: rgb(46, 119, 208);
+}
+  
+.plan-main .plan-list .plan-item{
+    width: 250px;
+    min-width: 250px;
+}
+  
+.plan-main .plan-list .plan-item header{
+    height: 172px;
+}
+  
+.plan-main .plan-list .plan-item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 306px;
+}
+  
+.plan-main .plan-list .plan-item ul li{
+    display: flex;
+    gap: 10px;
+}
+  
+.plan-main .plan-list .plan-item ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+.plan-main .plan-list .plan-item footer {
+    color: rgb(37, 37, 37);
+    font-size: 10px;
+    height: 72px;
+ }
+  
+.plan-main .plan-list .plan-item footer p a {
+    color: rgb(37, 37, 37);
+}
+
+/* Rodapé */
+
+.footer-main {
+	background: black;
+	color: white;
+	padding: 86px 0;
+    text-align: center;
+}
+
+.footer-main .footer-content {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.footer-main .footer-content .footer-menu {
+	margin: 0 20px;
+	list-style: none;
+}
+
+.footer-main .footer-content .footer-menu .footer-menu-item {
+	margin: 25px 0;
+	text-align: left;
+	transition: all 300ms ease;
+}
+
+.footer-main .footer-content .footer-menu .footer-menu-item:hover {
+	color: #1db954;
+	cursor: pointer;
+}
+
+.footer-main .footer-content .footer-menu p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #919496;
+	font-size: 0.8rem;
+	text-align: left;
+}
+
+.socials {
+	display: flex;
+}
+
+.socials i {
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 300ms ease;
+}
+
+.socials i:hover {
+	color: #1db954;
+	cursor: pointer;
+}
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 90%;
+	margin: auto;
+	font-weight: bold;
+	color: #919496;
+	font-size: 0.75rem;
+	padding-top: 50px;
+}
+
+.footer-info .footer-info-items {
+	display: flex;
+	list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+	margin: 0 10px;
+	transition: all 300ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover {
+	color: #1db954;
+	cursor: pointer;
+}
+
+.footer-info .rights .country {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.footer-info .rights .country p {
+	transition: all 300ms ease;
+}
+
+.footer-info .rights .country p:hover {
+	color: #1db954;
+	cursor: pointer;
+}
+
+.footer-info .rights .country .globe {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
+}
