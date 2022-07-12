@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fenrir's Guild</title>
+</head>
+<body onload="inicio()">
+    <header>
+        <p>Fenrir's Guild</p>
+    </header>
+    <main>
+        <article>
+            <nav>
+                <button autofocus onclick="home()">Home</button>
+                <button onclick="login()">Login</button>
+                <button onclick="cadastro()">Cadastro</button>
+            </nav>
+            <section class="sec">
+                <h1>Fenrir, o Algoz dos Deuses</h1>
+                <p>Na mitologia nórdica, Fenrir (em nórdico antigo: "morador do poço"), Fenrisulfr (em nórdico antigo: "lobo Fenris"), Hróðvitnir (em nórdico antigo: "lobo da fama"), ou Vánagandr (em nórdico antigo: "o monstro do rio Ván") é um lobo monstruoso. Fenrir é atestada na Edda em verso, compilada no século XIII a partir de fontes tradicionais anteriores, e a Edda em prosa e na Heimskringla, escritas no século XIII por Snorri Sturluson. Em ambas a Edda em verso e a Edda em prosa, Fenrir é o pai do lobos Skoll e Hati, é um filho de Loki, e é pressagiado para matar o deus Odin durante os eventos de Ragnarök, mas por sua vez, ser morto pelo filho de Odin Vidar.</p>
+                <p>Na Edda em prosa, informações adicionais são dadas sobre Fenrir, incluindo que, devido ao conhecimento dos deuses de profecias predizendo grandes problemas com Fenrir e seu rápido crescimento, os deuses o prendiam, e como resultado Fenrir arrancou a mão direita do deus Týr. Representações de Fenrir foram identificadas em vários objetos, e as teorias acadêmicas têm sido propostas a respeito da relação de Fenrir a outros seres caninos na mitologia nórdica. Fenrir tem sido objeto de descrições artísticas, e ele aparece na literatura.</p>
+            </section>
+
+            <section class="sec">
+                <h1>Login</h1>
+                <div>
+                    <input type="text" name="txtLogin" placeholder="Login">
+                    <br>
+                    <input type="password" name="txtSenha" placeholder="Senha">
+                    <br>
+                    <button onclick="entrar()">Entrar</button>
+                </div>
+            </section>
+
+            <section class="sec">
+                <h1>Cadastrar</h1>
+                <div>
+                    <input type="email" name="txtEmail" placeholder="Email">
+                    <br>
+                    <input type="text" name="txtLogin" placeholder="Login">
+                    <br>
+                    <input type="password" name="txtSenha" placeholder="Senha">
+                    <br>
+                    <input type="password" name="txtSenha" placeholder="Confirme a senha">
+                    <br>
+                    <button onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </section>
+        </article>      
+        
+        <article id="conectado">   
+                <div>
+                    <span>Login</span>
+                    <h2>Conectado</h2>
+                    <p>Seja bem-vindo a <s>pior</s> melhor guild de todos os jogos! <a href="#" title="Em manutenção">Servidor do Discord.</a></p>
+                </div>
+        </article>
+    </main>
+    <section class="galeria">
+        <div>
+            <img src="./assets/img1.png" alt="" title="Às vezes ganhamos na solo">
+            <img src="./assets/img2.png" alt="" title="Tiny Tina's Wonderlands">
+            <img src="./assets/img3.png" alt="" title="PvP do World of Warcraft">
+            <img src="./assets/img4.png" alt="" title="PvP do Tree of Savior">
+            <img src="./assets/img5.png" alt="" title="Pentakill naquele jogo tóxico">
+        </div>
+    </section>
+    <section class="tabela">
+        <table>
+            <caption>Ranking de Integrantes</caption>
+            <thead>
+                <tr>
+                    <th>Nick</th>
+                    <th>Pontos</th>
+                    <th>Kills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fenrir</td>
+                    <td>3000</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Nikos</td>
+                    <td>2900</td>
+                    <td>666</td>
+                </tr>
+                <tr>
+                    <td>Zephyro</td>
+                    <td>2800</td>
+                    <td>290</td>
+                </tr>
+                <tr>
+                    <td>Bravery</td>
+                    <td>2700</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>Vissaha</td>
+                    <td>2600</td>
+                    <td>270</td>
+                </tr>
+                <tr>
+                    <td>Yommu</td>
+                    <td>2500</td>
+                    <td>260</td>
+                </tr>
+                <tr>
+                    <td>Scar</td>
+                    <td>2400</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Ralph</td>
+                    <td>2300</td>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <td>Antonio</td>
+                    <td>2200</td>
+                    <td>230</td>
+                </tr>
+                <tr>
+                    <td>Hynninz</td>
+                    <td>2100</td>
+                    <td>220</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>2000</td>
+                    <td>210</td>
+                </tr>
+                <tr>
+                    <td>Chrono</td>
+                    <td>1900</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Gabyez</td>
+                    <td>1800</td>
+                    <td>190</td>
+                </tr>
+                <tr>
+                    <td>LewdWeeb</td>
+                    <td>1700</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>TanithLow</td>
+                    <td>1600</td>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <td>DT</td>
+                    <td>1500</td>
+                    <td>160</td>
+                </tr>
+                <tr>
+                    <td>Hyuuga</td>
+                    <td>1400</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Ju</td>
+                    <td>1300</td>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <td>Bozzs</td>
+                    <td>1200</td>
+                    <td>130</td>
+                </tr>
+                <tr>
+                    <td>Gabi</td>
+                    <td>1100</td>
+                    <td>120</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>🐺 © Copyright 2022 - Fenrir's Guild - Todos os direitos reservados 🐺</p>
+    </footer>
+
+    <script>
+
+        function inicio(){
+            document.querySelectorAll('main article section')[0].style.display = "block"
+            document.querySelectorAll('main article section')[1].style.display = "none"
+            document.querySelectorAll('main article section')[2].style.display = "none"
+            document.getElementById('conectado').style.display = "none"
+        }
+
+        function home(){
+            document.querySelectorAll('main article section')[0].style.display = "block"
+            document.querySelectorAll('main article section')[1].style.display = "none"
+            document.querySelectorAll('main article section')[2].style.display = "none"
+        }
+
+        function login(){
+            document.querySelectorAll('main article section')[0].style.display = "none"
+            document.querySelectorAll('main article section')[1].style.display = "block"
+            document.querySelectorAll('main article section')[2].style.display = "none"
+        }
+
+        function cadastro(){
+            document.querySelectorAll('main article section')[0].style.display = "none"
+            document.querySelectorAll('main article section')[1].style.display = "none"
+            document.querySelectorAll('main article section')[2].style.display = "block"
+        }
+
+        function entrar(){
+            var login = document.getElementsByName('txtLogin')[0].value 
+            var senha = document.getElementsByName('txtSenha')[0].value 
+            document.querySelector('main #conectado span').innerText = login
+            document.querySelector('main #conectado span').style.fontSize = "25px"
+            document.querySelector('main #conectado span').style.color = "green"
+            document.querySelectorAll('main article')[0].style.display = "none"
+            document.getElementById('conectado').style.display = "block"
+        }
+
+        function cadastrar(){
+            var email = document.getElementsByName('txtEmail')[0].value 
+            document.querySelector('main #conectado span').innerText = email
+            document.querySelector('main #conectado span').style.fontSize = "25px"
+            document.querySelector('main #conectado span').style.color = "green"
+            document.querySelectorAll('main article')[0].style.display = "none"
+            document.getElementById('conectado').style.display = "block"
+        }
+    </script>
+</body>
+</html>
