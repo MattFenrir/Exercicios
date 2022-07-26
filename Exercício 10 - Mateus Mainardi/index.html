@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Python</title>
+</head>
+<body onload="inicio()">
+    <header>
+        <p>Python</p>
+    </header>
+    <main>
+        <article>
+            <nav>
+                <button autofocus onclick="home()">Home</button>
+                <button onclick="intro()">Intro</button>
+                <button onclick="estrutura()">Estrutura Condicional</button>
+                <button onclick="laco()">Laço de Repetição</button>
+            </nav>
+            <section class="sec">
+                <h1>Curiosidades sobre Python</h1>
+                <p>Python é uma das linguagens de programação de maior busca dos últimos anos, se destacando por seu potencial para a construção de soluções de diferentes tipos de problemas, inclusive aqueles que permeiam a Ciência de Dados. Sua sintaxe altamente amigável e sua grande comunidade cooperam para o seu contínuo crescimento.</p>
+            
+                <p>Hoje separamos algumas curiosidades sobre essa linguagem que podem surpreender você:</p>
+                    
+                <p>1. O nome Python</p>
+                    
+                <p>Ao contrário do que muitos acreditam, o nome Python não é derivado de um réptil, mas sim da série de comédia britânica "Monty Python's Flying Circus", que, de acordo com o que é dito, seria a série favorita de Guido Van Rossum, inventor da linguagem Python.</p>
+                    
+                <p>2. Python utiliza comparação da cadeia</p>
+                    
+                <p>Em Python, pode haver várias comparações simultâneas. Enquanto em outras linguagens de programação você normalmente não pode programar uma cadeia de operadores de comparação, em Python os operadores de comparação podem ser encadeados aleatoriamente. Ele não tem que seguir uma ordem particular de operadores.</p>
+                    
+                <p>3. As funções em Python podem retornar vários valores</p>
+                    
+                <p>Python oferece a possibildiade de retornar vários valores usando a função. O valor é retornado como uma tupla.</p>
+                    
+    <pre><code>
+        print('Exemplo de código')
+        def funcao():
+        grupo = 'GTA'
+        x = 7
+        return grupo,x
+        grupo, x = funcao()
+        print(grupo)
+        print(x)
+    </code></pre>
+                <p>4. Python não precisa de compilador</p>
+                    
+                <p>Ao contrário de outras linguagens de programação, Python não precisa de um compilador. O código é armazenado em um arquivo.pyc. Este arquivo funciona como um mecanismo dinâmico para Python, eliminando a necessidade de qualquer compilador.</p>
+                    
+                <p>5. Python possui uma variante de C e Java</p>
+                    
+                <p>As variantes de C e Java são chamadas de CPython, Jython. O C variante é CPython , para dar Python o vislumbre benefícios da linguagem C, sendo benéfico em termos de desempenho , pois tem um compilador e um interpretador.  A variante Jython elimina o recurso de destaque do Java, como produtividade.</p>
+                    
+                <p>6. Você pode usar um else dentro de um loop for</p>
+                    
+                <p>Ao contrário de outras linguagens, é possível usar um else dentro de um loop for. Isso ocorre apenas se o loop completar toda a sua execução, sem um break.</p>
+    
+    <pre><code>                
+        print('Exemplo de código')
+    for i in range(10):
+        print(i)
+    else:
+        print('Executado apenas se não houver break')
+    </code></pre>
+                <h1>Como funciona</h1>
+                <p>Python é uma linguagem interpretada, o que significa que ela traduz o código analisado e o executa.</p>
+
+                <p>Na prática, a sua grande vantagem é que ela traz soluções para os mais variados tipos de problemas, sejam eles web, desktop ou mobile.</p>
+
+                <p>Além disso, é uma ferramenta multiplataforma independente, que pode ser aplicada em Windows, Macintosh e Linux.</p>
+
+                <p>Ela funciona de uma maneira muito mais acessível, já que usa códigos mais simples do que as concorrentes – a construção do código Python utiliza palavras-chave em inglês, o que facilita o entendimento.</p>
+
+                <p>A própria quantidade de códigos para executar funções também é menor no Python em relação ao C++ ou ao Java, por exemplo.</p>
+
+                <p>Por ser uma linguagem bastante utilizada e open source, existem diversas bibliotecas de scripts, o que amplia as suas possibilidades.</p>
+
+                <p>Isso faz com que projetos sejam desenvolvidos de forma mais rápida graças aos módulos e às funções disponíveis.</p>
+
+                <h1>O que pode fazer</h1>
+                <p>Vários softwares</p>
+            </section>
+
+            <section class="sec">
+                <h1>O que é variável?</h1>
+                <p>Variáveis em Python são lugares reservados na memória de um dispositivo para o armazenamento de dados que posteriormente vão ser usados na execução de uma solução digital.</p>
+
+                <p>Essas variáveis podem ter formatos e tamanhos diferentes, entre outras particularidades.</p>
+                    
+                <p>Podemos pensar que a memória RAM de um dispositivo é como um grande armário, que comporta diversos itens no seu interior, e esse itens são as variáveis.</p>
+                    
+                <p>Quando você abre um armário, lá podem estar roupas, calçados, livros e objetos decorativos em geral.</p>
+                    
+                <p>Apesar de suas diferenças, todos esses itens podem ser armazenados em um único lugar e, na medida em que são retirados do seu espaço, fica uma lacuna que pode ser preenchida por outra variável ou pela mesma.</p>
+            </section>
+
+            <section class="sec">
+                <h1>If em Python</h1>
+                <p>Utilizamos o comando if para verificar uma expressão e executar um bloco de código caso a condição definida seja verdadeira. É importante dizer que a instrução if pode ser utilizada sozinha, ou seja, apenas para executar algo se a condição for verdadeira. Observe que devemos utilizar o caractere dois pontos “:” ao final da instrução.</p>
+                
+    <pre><code>
+    if (expressão_for_verdadeira):
+        executar_bloco_de_codigo()
+    </code></pre>
+
+                <h1>Else em Python</h1>
+                <p>O comando else é utilizado para executar um bloco de código, caso o resultado da expressão informada na instrução if seja falso. Vale ressaltar que a instrução else só pode ser utilizada em conjunto com o if. Perceba que também precisamos utilizar o caractere dois pontos após a expressão da instrução if e após o else.</p>
+
+    <pre><code>
+    if (expressão_for_verdadeira):
+        executar_primeiro_bloco_de_codigo()
+    else:
+        executar_segundo_bloco_de_codigo()
+    </code></pre>
+
+                <h1>Elif em Python.</h1>
+                <p>O comando elif é utilizado quando queremos realizar a verificação de outra expressão caso a primeira validação seja falsa.</p>
+
+    <pre><code>
+    if (expressão_for_verdadeira):
+        executar_primeiro_bloco_de_codigo()
+    elseif (segunda_expressão_for_verdadeira):
+        executar_segundo_bloco_de_codigo()
+    </code></pre>
+
+                <p>Como usar as estruturas condicionais em Python: if, elif e else?
+                Agora que vimos o que faz cada parte da estrutura condicional Python if, vamos demonstrar como implementá-la.</p>
+
+
+                <h1>if/else</h1>
+                <p>No código fonte abaixo, solicitamos que a pessoa usuária informe um valor numérico inteiro entre 0 e 100 e verificamos se ele é maior que 50. Caso o resultado seja verdadeiro, exibimos uma mensagem na tela e se for negativo, exibimos outro tipo de mensagem.</p>
+
+    <pre><code>
+    a = int(input("Informe um número entre 0 e 100: "))
+    if a >= 50:
+        print ("O número ", a, " é maior ou igual a 50")
+    else:
+        print ("O número ", a, " é menor que 50")
+    </code></pre>
+
+                <h1>if/elif/else</h1>
+                <p>Vamos melhorar um pouco mais o código acima para exibir uma mensagem mais apropriada, caso o valor informado seja igual a 50.</p>
+
+    <pre><code>
+    a = int(input("Informe um número entre 0 e 100: "))
+    if a > 50:
+        print ("O número ", a, " é maior que 50")
+    elif a == 50:
+        print ("O número informado é igual a 50")
+    else:
+        print ("O número ", a, " é menor que 50")
+    </code></pre>
+
+                <p>Perceba que utilizamos o elif para verificar se o valor informado é igual a 50. Depois usamos o comando Python else para atender à condição em que o valor é menor que 50 e exibir a mensagem correspondente na tela.</p>
+                </section>
+
+            <section class="sec">
+                <h1>For</h1>
+
+                <p>Sendo a estrutura de repetição mais utilizada na linguagem Python, ela aceita sequências estáticas e geradas por iteradores. Iteradores são estruturas que permitem acesso aos itens de uma coleção de elementos de forma sequencial.</p>
+
+                <p>Durante a execução de um laço for, a referência aponta para um elemento de uma determinada sequência. A cada iteração, essa referência é atualizada para que o bloco de código do for processe o elemento correspondente.</p>
+
+                <p>Caso necessário, podemos utilizar a cláusula break para interromper o laço e continue para pular para a próxima iteração. Podemos, também, colocar um bloco de código dentro de um else, para que este seja executado ao final do laço caso ele não for interrompido por um break.</p>
+
+                <p>Veja a sintaxe abaixo sobre o que explicamos acima:</p>
+        
+    <pre><code>
+    for {referência} in {sequência} :
+        {bloco de código}
+        continue
+        break
+    else:
+        {bloco de código}
+    </code></pre>
+    
+        <p>Veja um exemplo prático de um for:</p>
+
+    <pre><code>
+    for i in ['Tamanduá', 'Tatu', 'Boto Cor-De-Rosa'] :
+        print(i)
+    
+    # Saída:
+    # Tamanduá
+    # Tatu
+    # Boto Cor-De-Rosa
+    </code></pre>
+
+                <h1>While</h1>
+
+                <p>A estrutura de repetição While é utilizada para executar um bloco de código enquanto uma condição for atendida. Assim como o For, as cláusulas break, continue e else podem ser utilizadas da mesma maneira.</p>
+
+                <p>Utilizamos o While quando não podemos definir a quantidade de iterações que podem ocorrer e quando não há uma sequência a seguir.</p>
+
+                <p>Veja como é a sintaxe:</p>
+
+    <pre><code>
+    while {condição}:
+        {bloco de código}
+        continue
+        break
+    else:
+        {bloco de código}
+    </code></pre>
+
+                <p>Agora vamos ver um exemplo prático:</p>
+
+    <pre><code>
+    i = 0
+
+    while i < 5 :
+         print(i)
+        i = i + 1
+
+    # Saída
+    # 0
+    # 1 
+    # 2 
+    # 3 
+    # 4
+    </code></pre>
+            </section>
+    </main>
+    <footer>
+        <p>© Copyright 2022 - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

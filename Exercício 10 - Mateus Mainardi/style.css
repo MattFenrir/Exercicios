@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Midia celular*/
+@media(min-width: 400px){
+
+/* Header */
+
+header{
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    color: green;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    color: green;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/stretched-1920-1080-679140.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main article{
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    margin-top: 150px;
+}
+
+/* Buttons */ 
+
+main article nav{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main article nav button{
+    width: 33%;
+    padding: 10px;
+    background-color: rgb(32, 33, 36); 
+    color: white;
+    border: 1px double black;
+    outline: 1px solid white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main article nav button:focus{
+    background-color: green;
+}
+
+/* Section */
+
+main article .sec{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    height: 300px;
+    text-align: justify;
+    overflow: auto;
+}
+
+main article .sec h1{
+    text-align: center;
+    padding: 10px;
+    color: green;
+}
+
+main article .sec p{
+    padding: 20px;
+    color: white;
+}
+
+main article .sec pre code{
+    color: white;
+}
+
+main article .sec:nth-child(2){
+    background-color: rgb(32, 33, 36);
+    display: none;  
+}
+
+main article .sec:nth-child(n + 5){
+    display: none;
+}
+}
+
+@media(min-width: 800px){
+    
+/* Header */
+
+header{
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    color: green;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    color: green;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/stretched-1920-1080-679140.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main article{
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    margin-top: 150px;
+}
+
+/* Buttons */ 
+
+main article nav{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+}
+
+main article nav button{
+    width: 33%;
+    padding: 10px;
+    background-color: rgb(32, 33, 36); 
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main article nav button:focus{
+    background-color: green;
+}
+
+/* Section */
+
+main article .sec{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    height: 300px;
+    text-align: justify;
+}
+
+main article .sec h1{
+    text-align: center;
+    padding: 10px;
+    color: green;
+}
+
+main article .sec p{
+    padding: 20px;
+    color: white;
+}
+
+main article .sec:nth-child(2){
+    background-color: rgb(32, 33, 36);
+    display: none;  
+}
+
+main article .sec:nth-child(n + 5){
+    display: none;
+}
+}
+
+@media(min-width: 1200px){
+
+    /* Header */
+
+header{
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    color: green;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    color: green;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/stretched-1920-1080-679140.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main article{
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    margin-top: 150px;
+}
+
+/* Buttons */ 
+
+main article nav{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+}
+
+main article nav button{
+    width: 33%;
+    padding: 10px;
+    background-color: rgb(32, 33, 36); 
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main article nav button:focus{
+    background-color: green;
+}
+
+/* Section */
+
+main article .sec{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+    height: 300px;
+    text-align: justify;
+}
+
+main article .sec h1{
+    text-align: center;
+    padding: 10px;
+    color: green;
+}
+
+main article .sec p{
+    padding: 20px;
+    color: white;
+}
+
+main article .sec:nth-child(2){
+    background-color: rgb(32, 33, 36);
+    display: none;  
+}
+
+main article .sec:nth-child(n + 5){
+    display: none;
+}
+}
