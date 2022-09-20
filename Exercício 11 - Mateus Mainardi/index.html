@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>POO/OOP</title>
+</head>
+<body onload="inicio()">
+    <header>
+        <p>POO/OOP</p>
+    </header>
+    <main>
+        <article>
+            <nav>
+                <button autofocus onclick="home()">Classes</button>
+                <button onclick="intro()">Instância/Objeto</button>
+                <button onclick="estrutura()">Encapsulamento</button>
+                <button onclick="laco()">POO</button>
+            </nav>
+            <section class="sec">
+                <h1>Explicações</h1>
+                <p>Uma <strong>classe</strong> é uma estrutura que abstrai um conjunto de objetos com características similares. Uma classe define o comportamento de seus objetos - através de métodos - e os estados possíveis destes objetos - através de atributos.</p>
+                
+                <p>Em outras palavras, uma classe descreve os serviços oferecidos por seus objetos e quais informações eles podem armazenar.</p>
+                    
+                <p>Classes não são diretamente suportadas em todas as linguagens, e são necessárias para que uma linguagem seja orientada a objetos.</p>
+                    
+                <p>Uma classe representa um conjunto de objetos com características afins. Uma classe define o comportamento dos objetos através de seus métodos, e quais estados ele é capaz de manter através de seus atributos..</p>
+                
+                <p>Exemplo:</p>
+
+    <pre><code>
+        class Empregado:
+            def __init__(self, nome, idade):
+                self.nome = nome
+                self.idade = idade
+    </code></pre>
+            </section>
+
+            <section class="sec">
+                <h1>Explicações</h1>
+                <p>Um objeto, na vida real, é qualquer coisa a qual pudermos dar um nome.</p>
+
+                <p>objeto, em programação orientada a objetos, é uma instância (ou seja, um exemplar) de uma classe. A Wikilivros é um exemplo de Wiki, ou, a Wikilivros é uma instância de Wiki. Isto poderia ser representado em um programa orientado a objetos com uma classe chamada Wiki e um objeto do tipo Wiki chamado Wikilivros.</p>
+
+                <p>Um objeto é capaz de armazenar estados através de seus atributos e reagir a mensagens enviadas a ele, assim como se relacionar e enviar mensagens a outros objetos.</p>
+
+                <p>Atributos são características de um objeto. Basicamente a estrutura de dados que vai representar a classe.</p>
+
+                <p>Exemplos: um objeto da classe "Funcionário" teria como atributos "nome", "endereço", "telefone", "CPF", etc.</p>
+
+                <p>O conjunto de valores dos atributos de um determinado objeto é chamado de estado.</p>
+            </section>
+
+            <section class="sec">
+                <h1>Explicações</h1>
+                <p>Encapsulamento vem de encapsular, que em programação orientada a objetos significa separar o programa em partes, o mais isoladas possível. A ideia é tornar o software mais flexível, fácil de modificar e de criar novas implementações.</p>
+
+                <p>Para exemplificar, podemos pensar em uma dona de casa (usuário) utilizando um liquidificador (sistema). O usuário não necessita conhecer detalhes do funcionamento interno do sistema para poder utilizá-lo, precisa apenas conhecer a interface, no caso, os botões que controlam o liquidificador.</p>
+                
+                <p>Uma grande vantagem do encapsulamento é que toda parte encapsulada pode ser modificada sem que os usuários da classe em questão sejam afetados. No exemplo do liquidificador, um técnico poderia substituir o motor do equipamento por um outro totalmente diferente, sem que a dona de casa seja afetada - afinal, ela continuará somente tendo que pressionar o botão.</p>
+                
+                <p>O encapsulamento protege o acesso direto (referência) aos atributos de uma instância fora da classe onde estes foram declarados. Esta proteção consiste em se usar modificadores de acesso mais restritivos sobre os atributos definidos na classe. Depois devem ser criados métodos para manipular de forma indireta os atributos da classe.</p>
+                
+                <p>Encapsular atributos também auxilia a garantir que o estado e o comportamento de um objeto se mantenha coeso. Por exemplo, no caso da classe Semaforo poderíamos ter um método de acesso chamado lerCor(), e um modificador chamado proximaCor(). O estado é mantido pois os usuários da classe não podem alterar as cores de um semáforo ao seu bel prazer e, por exemplo, fazer a seguinte troca de cores: vermelho-amarelo-vermelho. É comum usar o padrão get<nomeDoAtributo> para o método que retorna o valor atual do atributo e set<nomeDoAtributo> para o método que modifica o valor de um atributo do objeto, como no exemplo abaixo: setComProtecao e getComProtecao.</nomeDoAtributo>
+            </section>
+
+            <section class="sec">
+                <h1>Explicações</h1>
+
+                <p>Orientação de objetos (OO), em uma definição formal, é um paradigma de análise, projeto e programação de sistemas de software baseado na composição e interação entre diversas unidades de software chamadas de objetos. Ou seja, é um modelo utilizado no desenvolvimento de software onde trabalhamos com unidades chamadas objetos (é ser objetivo)</p>
+
+                <p>Como veremos, a orientação a objetos visa um pensamento o mais próximo possível da vida real. Ao programar orientado a objetos não teremos apenas funções que são chamadas uma seguida da outra, mas sim objetos que possuem estado e comportamento.</p>
+
+                <h1>Porque programar orientado a objetos</h1>
+
+                <p>A Programação Orientada a Objetos (POO), foi criada para tentar aproximar o mundo real e o mundo virtual: a ideia fundamental é tentar simular o mundo real dentro do computador. Para isso, nada mais natural do que utilizar objetos, afinal, nosso mundo é composto de objetos, certo?</p>
+
+                <p>Na Programação Orientada a Objetos, o programador (você) é responsável por moldar o mundo dos objetos, e definir como os objetos devem interagir entre si. Os objetos "conversam" uns com os outros através do envio de mensagens, e o papel principal do programador é definir quais serão as mensagens que cada objeto pode receber, e também qual a ação que o objeto deve realizar ao receber cada mensagem.</p>
+
+                <p>Isso possibilita a criação de códigos com baixo acoplamento (explicado mais adiante) e que podem ser facilmente reutilizados, o que são alguns dos principais motivos para se programar orientado a objetos.</p>
+
+                <h1>História</h1>
+
+                <p>O termo Programação Orientada a Objetos (POO) foi criado por Alan Kay, autor da linguagem de programação Smalltalk. Mas mesmo antes da criação do Smalltalk, algumas das ideias da POO já eram aplicadas, sendo que a primeira linguagem a realmente utilizar estas ideias foi a linguagem Simula 67, criada por Ole-Johan Dahl e Kristen Nygaard em 1967. Entretanto só veio a ser aceito realmente nas grandes empresas de desenvolvimento de Software por volta dos anos 90.</p>
+                
+                <p>Alguns exemplos de linguagens orientadas a objetos modernas utilizadas por grandes empresas em todo o mundo são: Java, C#, C++, Object Pascal (Delphi), Ruby, Python, Lisp, etc.</p>
+                
+                <p>A maioria das linguagens que adotaram o paradigma da orientação a objetos adotaram apenas parcialmente, dando espaço para o antigo modelo procedural de programação, como acontece na linguagem C++, por exemplo, onde temos a possibilidade de usar POO, mas a linguagem não força o programador a adotar este paradigma de programação, sendo ainda possível programar da forma procedural tradicional. Este tipo de linguagem segue a idéia de utilizar uma linguagem previamente existente como base e adicionar novas funcionalidades a ela. Outras são mais "puras", sendo construídas do zero focando-se sempre nas idéias por trás da orientação a objetos como é o caso das linguagens Smalltalk, Self e IO, onde tudo é orientado a objetos.</p>
+            </section>
+    </main>
+    <footer>
+        <p>© Copyright 2022 - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
