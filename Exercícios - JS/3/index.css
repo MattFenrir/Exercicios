@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
+}
+
+body{
+    background-color: grey;
+    margin: auto;
+}
+
+.dois{
+    background-color: red;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.dez{
+    background-color: wheat;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.cinco{
+    background-color: yellow;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.vinte{
+    background-color: salmon;
+    padding: 0 40px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.cem{
+    background-color: violet;
+    padding: 0 50px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.cinquenta{
+    background-color: green;
+    padding: 0 45px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.duzentos{
+    background-color: aliceblue;
+    padding: 0 80px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+

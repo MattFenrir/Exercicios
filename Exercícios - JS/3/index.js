@@ -9,13 +9,13 @@ const carteira = [2, 10, 5, 10, 20, 2, 5, 100, 50, 50, 10, 50, 10, 5, 2, 10, 50,
 //}
 
 //soma()
-// console.log(soma(carteira))
+// console.log(soma())
 
 // const media = soma() / carteira.length
 // console.log(media)
 
-qnt = 0
 function notasDois(){
+    qnt = 0
     for (let i = 0; i < carteira.length; i++){
         if (carteira[i] === 2){
             qnt += carteira[i]
@@ -25,8 +25,8 @@ function notasDois(){
 }
 notasDois()
 
-qnt2 = 0
 function notasDez(){
+    qnt2 = 0
     for (let i = 0; i < carteira.length; i++){
         if (carteira[i] === 10){
             qnt2 += 1
@@ -52,8 +52,56 @@ function removeDuzentos(){
 }
 removeDuzentos()
 
-
-
+const exibirLista = () => {
+    const divTeste = document.querySelector("body div")
+    console.log(carteira)
+    for(let i = 0; i < carteira.length; i++){
+        if (carteira [i] === 2){
+            divTeste.innerHTML += ` 
+            <span class="dois">
+                ${carteira[i]}
+            </span>
+            `
+        }else if (carteira [i] === 10){
+            divTeste.innerHTML += ` 
+            <span class="dez">
+                ${carteira[i]}
+            </span>
+            `
+        }else if (carteira [i] === 5){
+            divTeste.innerHTML += ` 
+            <span class="cinco">
+                ${carteira[i]}
+            </span>
+            `
+        }else if (carteira [i] === 20){
+            divTeste.innerHTML += ` 
+            <span class="vinte">
+                ${carteira[i]}
+            </span>
+            `
+        }else if (carteira [i] === 100){
+            divTeste.innerHTML += ` 
+            <span class="cem">
+                ${carteira[i]}
+            </span>
+            `
+        }else if (carteira [i] === 50){
+            divTeste.innerHTML += ` 
+            <span class="cinquenta">
+                ${carteira[i]}
+            </span>
+            `
+        }else if (carteira [i] === 200){
+            divTeste.innerHTML += ` 
+            <span class="duzentos">
+                ${carteira[i]}
+            </span>
+            `
+        }
+        }
+    }
+exibirLista()
 
 
 //2628
